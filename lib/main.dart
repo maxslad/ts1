@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ts1/sec_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -198,7 +199,17 @@ class _MyHomePageState extends State<MyHomePage> {
                     });
                   },
                   child: const Text("RESETTTTT22222")),
-              ElevatedButton(onPressed: () {}, child: const Text("NEXT"))
+              ElevatedButton(
+                  onPressed: () async {
+                    await Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => SecPage(
+                                  page1text: input_text.text,
+                                )));
+                    input_text.clear();
+                  },
+                  child: const Text("NEXT"))
             ],
           ),
         ),
