@@ -197,7 +197,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       _counter = _counter;
                     });
                   },
-                  child: const Text("RESETTTTT")),
+                  child: const Text("RESETTTTT22222")),
               ElevatedButton(onPressed: () {}, child: const Text("NEXT"))
             ],
           ),
